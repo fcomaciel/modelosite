@@ -64,7 +64,7 @@ p {
     margin: 15px 15px 0 0;
     width: 15%;
     border: 1px solid #003100;
-    background: url(_img/logo.png) no-repeat;
+    background: url(img/logo.png) no-repeat;
     -moz-box-shadow: 6px 6px 5px #004100;
 	-webkit-box-shadow: 6px 6px 5px #004100;
 	box-shadow: 6px 6px 5px #004100;
