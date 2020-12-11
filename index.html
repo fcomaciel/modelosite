@@ -1,63 +1,125 @@
-<!DOCTYPE html> <!-- Determina o versão do HTML -->
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <!-- Seção de cabeçalho do documento -->
-    <meta charset="UTF-8"> <!-- Determina conjunto de caracteres aser usado -->
-    <title>Alguns Elementos HTML</title> <!-- Título do documento-->
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Audiowide);
+    </style>
+    <link rel="stylesheet" href="_css/estilo_modelo.css">
+    <link rel="stylesheet" href="_css/menu_modelo.css">
+    <meta charset="UTF-8">
+    <title>Projeto Web Interativa</title>
 </head>
-
 <body>
-    <!-- Aqui os conteúdos da página  -->
+    <div id="div_principal">
+        <!-- Início cabeçalho da aplicação	-->
+        <header id="cabecalho">
+            <img src="_img/logo.png" alt="Logo HTML5">
+            <h1>PROGRAMADOR WEB</h1>
+            <h2>Escola profissionalizante: Senac AR/PI</h2>
+            <h3>Criação de aplicações interativas WEB</h3>
+            <nav id="menu">
+                <h2 id="titulo_menu">Menu principal</h2>
+                <ul>
+                    <li><a href="index.html">Página principal</a></li>
+                    <li><a href="sobre.html">Quem somos</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- FIM cabeçalho da aplicação	-->
+        <section id="artigos">
+        <!-- Início seção artigos -->
+            <h2>Artigos</h2>
 
-    <h1>Elementos HTML</h1> <!-- Cabeçalho nível 1-->
+            <h3>Som na caixa!</h3>
+            <p>
+                Primeiro parágrafo artigo
+            </p>
+            <p>
+                Segundo parágrafo artigo
+            </p>
+            <!-- Aqui colocar um áudio -->
+            <audio controls>
+                <source src="_sons/deeper.ogg" type="audio/ogg">
+                <source src="_sons/deeper.mp3" type="audio/mp3">
+                Seu navegador é palha, não suporta tags de áudio!
+            </audio>
+            <h3>LoremIpsum360° apresentação</h3>
+            <p>
+                <!-- Aqui uma imagem -->
+                <!-- aqui um link -->
+            </p>
+            <p>
+                Segundo parágrafo artigo
+            </p>
 
-    <h2>O que é o HTML ?</h2> <!-- Cabeçalho nível 2-->
+            <h3>Lorem Ipsum usa</h3>
+            <p>
+                <!-- Aqui uma imagem -->
+                <!-- aqui um link -->
+            </p>
+            <p>
+                Segundo parágrafo artigo
+            </p>
 
-    <p> <!-- Páragrafo -->
-        O HTLM (Linguagem de Marcação de HiperTexto) é uma linguagem de hipertexto e marcação, e esta é sua principal
-        característica, o que a torna tão poderosa para desenvolvimento de sites. As marcações são inseridas nos textos,
-        porem para os olhos dos leitores elas são invisíveis, pois sua principal finalidade é de passar instruções ao
-        navegador para que o mesmo possa renderizar uma pagina.
-    </p>
+            <h3>Lorem Ipsum origens</h3>
+            <p>
+                <!-- Aqui uma imagem -->
+                <!-- aqui um link -->
+            </p>
+            <p>
+                Segundo parágrafo artigo
+            </p>
 
-    <h2>O que são TAGs html ?</h2>
-    <p>
-        As TAGs são estruturas de linguagem de marcação que contém instruções para renderização no navegador. Os
-        navegadores interpretam essas instruções e a partir disso renderizam uma pagina. Podemos ainda dizer que "As
-        tags também são responsáveis por criar elementos nas paginas web com a função de organizar, identificar e
-        limitar o conteúdo de uma pagina. Cabe então ao Browser reconhecer esses elementos, e renderizá-las apresentando
-        seu conteúdo aos usuários."
-    </p>
- 
-    <p>
-        Para <i>mais sobre</i> <b>TAGs</b> e eletemtos do
-        <strong>HTML visite</strong> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element">Elementos HTML</a> 
-        e conheça todos os elementos aplicáveis
-    </p>
+            <h3> Benefícios Lorem Ipsum</h3>
+            <p>
+                <!-- Aqui uma imagem -->
+                <!-- aqui um link -->
+            </p>
+            <p>
+                Segundo parágrafo artigo
+            </p>
 
-    <p>Inserindo uma imagem no documento</p>
-    <figure>
-    </figure>
+            <h2>Mundo da tecnologia em vídeo</h2>
+            <!-- Aqui colocar um vídeo -->
+            <video width="100%" controls>
+                <source src="_videos/big_buck_bunny.ogv" type="video/ogg">
+                <source src="_videos/big_buck_bunny.mp4" type="video/mp4">
+                Seu navegador não suporta tags de vídeo
+            </video>
+            <p>
+                Segundo parágrafo artigo
+            </p>
+            <!-- Final seção artigos -->
+        </section>
+        <section id="lateral">
+            <!-- Início da seção lateral -->
+            <h3>Principais destaques</h3>
 
-    <p>Inserindo um vídeo no documento</p>
+            <h3>Primeiro destaque</h3>
+            <p>A</p>
+            <p>B</p>
+            <p>C</p>
 
-    <video controls>
-    </video>
-    
-    <p>Inserindo lista ordenada no documento</p>
-    <ol>
-        <li>Primeiro elemento da lista</li>
-        <li>Segundo elemento da lista</li>
-        <li>Terceiro elemento da lista</li>
-    </ol>
+            <h3>Segundo destaque</h3>
+            <p>A</p>
+            <p>B</p>
+            <p>C</p>
 
-    <p>Inserindo linsta não ordenada no documento</p>
-    <ul>
-        <li>Primeiro elemento da lista</li>
-        <li>Segundo elemento da lista</li>
-        <li>Terceiro elemento da lista</li>
-    </ul>
+            <h3>Terceiro destaque</h3>
+            <p>A</p>
+            <p>B</p>
+            <p>C</p>
+            <!-- Fim da seção lateral -->
+        </section>
+        <footer id="rodape">
+            <strong>SENAC - Sistama Nacional de Apredizagem Comercial - AR/PI</strong><br/>
+            Centro de tecnologia <em>Severino Ramos Brasil</em><br/>
+            Avenida Campo Sales, 111 - Centro - Teresina - Piauí.<br/>
+            Facebook | Twiter
+        </footer>
+    </div>
 </body>
-
 </html>
